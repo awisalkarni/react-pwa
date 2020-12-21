@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async() => {
-      const result = await fetch("http://orangevalleycaa.org/api/videos"). then(
+      const result = await fetch("http://orangevalleycaa.org/api/videos").then(
         response => response.json()
       )
       setData(result);
@@ -15,12 +15,13 @@ function App() {
   }, []);
 
   if (!data) {
-    return <div>
+    return 
+    <div>
       <header>
         <h1>Videos</h1>
         <div>Loading</div>
-        </header>
-        </div>
+      </header>
+    </div>
   }
   
   return (
