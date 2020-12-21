@@ -15,13 +15,14 @@ function App() {
   }, []);
 
   if (!data) {
-    return 
+    return (
     <div>
       <header>
         <h1>Videos</h1>
         <div>Loading</div>
       </header>
     </div>
+    );
   }
   
   return (
